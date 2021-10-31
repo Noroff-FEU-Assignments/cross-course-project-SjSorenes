@@ -55,11 +55,12 @@ footer ul {
     padding-inline-start: 0px;
 }
 
-footer ul li {
+footer ul li a {
     display: block;
     font-weight: normal;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #DBD5CF;
+    text-decoration: none;
 }
 
 #social-icons {
@@ -92,7 +93,7 @@ footer ul li {
 
 #trademark p {
     flex-grow: 1;
-    color:white;
+    color:#DBD5CF;
 }
  
 main {
@@ -369,6 +370,15 @@ article:hover {
     transform: scale(1.06);
 }
 
+article a {
+    text-decoration: none;
+    color: #0A3641;
+}
+
+article a:hover {
+    text-decoration: none;
+}
+
 .products-displayed article img {
     width: 100%;
     object-fit: cover;
@@ -376,7 +386,7 @@ article:hover {
 
 .product-info {
     padding: 0px 0px 5px 10px;
-    background-color: #DBD5CF; 
+    background-color: #DBD5CF;
 }
 
 .product-info h3 {
