@@ -1,10 +1,299 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-  </body>
-</html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop at Rainydays for durable jackets that keep you comfortable in any weather" />
+    <title>Rainydays | Home</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section id="top-nav">
+        <section class="search">
+            <input id="search-bar" type="text" placeholder="Search..." name="search"></input>
+            <a href="search-result.html">
+                <img id="search-icon" src="images/icon-search.png">
+            </a>
+        </section>
+        <section id="hamburger">
+            <label for="toggle">
+                <img id="hamburger-icon" src="images/icon-hamburger.png">
+            </a>
+            <input type="checkbox" id="toggle" />
+            <div class="hamburger-menu">
+                <nav>
+                    <ul>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="equipment.html">Equipment</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="logo">
+            <a href="index.html">
+                <img id="logo-img" src="images/logo-light-simple.png">
+            </a>
+        </section>
+        <section class="my-area">
+            <a href="search.html">
+                <img id="search-icon" src="images/icon-search.png">
+            </a>
+            <a href="my-page.html">
+                <img id="my-page" src="images/icon-user.png">
+            </a>
+            <a href="basket.html">
+                <img id="basket" src="images/icon-basket.png">
+            </a>
+        </section>
+
+        <!--INSERT: SEARCH BOX, MY PAGE, SHOPPING BASKET -->
+    </section>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="banner">
+            <section>
+                <a href="all-winter.html">
+                    <img class="banner-img" src="images/winter-sports.jpg">
+                </a>
+            </section>
+            <section class="banner-text">
+                <h4>Winter Sports</h4>
+                <p>Extreme or leisurely, we offer what you need for your outdoor adventures</p>
+                <button class="button"><a href="all-winter.html">Shop now</a></button>
+            </section>
+        </section>
+        <section class="content">
+            <section class="women-men">
+                <section class="women">
+                    <a href="women.html"><img src="images/women.jpg" alt=""></a>
+                </section>
+                <section class="men"> 
+                    <a href="men.html"><img src="images/men.jpg" alt=""></a>
+                </section>    
+            </section>
+            <section id="bestsellers" class="products-displayed">
+                <h2>Bestsellers</h2>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+            </section>
+
+            <section id="membership-promo">
+                <section id="membership-promo-content">
+                    <h3>Exclusive deals for members</h3>
+                    <p>Good reasons to join!</p>
+                    <button class="button"><a href="membership.html">Read more</a></button>
+                </section>
+            </section>
+
+            <section id="new-inn" class="products-displayed">
+                <h2>New inn</h2>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+                <article>
+                    <img src="images/product-1.jpg">
+                    <section class="product-info">
+                        <h3>Emma Bubble Jacket</h3>
+                        <p>Birch White</p>
+                        <p class="price">£49</p>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
+    
+<footer>
+    <section id="row">
+        <section id="help">
+            <h5>Help</h5>
+            <ul>
+                <li>Customer service</li>
+                <li>FAQ</li>
+                <li>Shipping and returns</li>
+                <li>Contact us</li>
+                <li>Our stores</li>
+            </ul>
+        </section>
+        <section id="about-us">
+            <h5>About us</h5>
+            <ul>
+                <li>Our values</li>
+                <li>Ethical production</li>
+                <li>Climate and environment</li>
+                <li>Press</li>
+                <li>Privacy protection</li>
+            </ul>
+        </section>
+        <section id="follow-us">
+            <h5>Follow us</h5>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>LinkedIn</li>
+                <li>Pinterest</li>
+            </ul>
+        </section>
+    </section>
+    <section id="social-icons">
+        <ul>
+            <li>
+                <img src="images/facebook-icon.png" alt="facebook">
+            </li>
+            <li>
+                <img src="images/twitter-icon.png" alt="facebook">
+            </li>
+            <li>
+                <img src="images/instagram-icon.png" alt="facebook">
+            </li>
+            <li>
+                <img src="images/linkedin-icon.png" alt="facebook">
+            </li>
+            <li>
+                <img src="images/pinterest-icon.png" alt="facebook">
+            </li>
+        </ul>
+    </section>
+    <section id="trademark">
+        <img src="images/logo-light.png" alt="">
+        <p>
+            All rights reserved, Rainydays - 2021
+        </p>
+    </section>
+</footer>
+</body>
