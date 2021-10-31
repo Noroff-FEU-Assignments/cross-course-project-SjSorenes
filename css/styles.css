@@ -140,7 +140,7 @@ h4 {
 
 p {
     font-family: skolar-sans-latin-condensed, trebuchet ms, arial, sans-serif;
-
+    font-size: 18px;
 }
 
 
@@ -213,9 +213,17 @@ p {
     align-items: center;
 }
 
-#my-page, #basket, #search-icon {
-    padding: 20px 10px 10px 10px;       
+#my-page, #basket, #search-icon {      
     max-width: 40px;
+}
+
+#my-page, #basket {
+    
+    padding: 20px 10px 10px 10px; 
+}
+
+#search-icon-mobile {
+    display: none;
 }
 
 nav {
@@ -521,7 +529,11 @@ article:hover {
         transition: 1s ease;
     }  
 
-    #my-page, #basket, #search-icon, #hamburger-icon {
+    #search-icon-mobile {
+        display: block;
+    }
+
+    #my-page, #basket, #search-icon-mobile, #hamburger-icon {
         padding: 0px;
         margin-left: 5px;
         max-height: 30px;
