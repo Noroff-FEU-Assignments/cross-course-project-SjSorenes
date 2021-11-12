@@ -390,11 +390,11 @@ main, .banner a {
     display: flex;
     width: 100%;
     height: calc(150px + 30vw);
-    margin: 13% 0 0 0;
+    margin: 13% 0;
     background-image: url('../images/membership-promo.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     justify-content: center;
 }
 
@@ -402,17 +402,17 @@ main, .banner a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: space-around;
     width: 100%;
 }
 
 .promo-container section section {
     width: 100%;
     margin-top: 8%;
-    margin-bottom: 3%;
 }
 
 .promo-container section h3 {
-    margin: 3vh 0vh 6vh 0vh;
+    margin: 3vh 0vh 5vh 0vh;
     color: #7e3900;
 }
 
@@ -580,6 +580,32 @@ footer section ul {
     width: 25.5%;
 }
 
+.productcolor-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+
+.productcolor-options section {
+    display: flex;
+    flex-direction: row;
+}
+
+.productcolor-options a {
+    width: 8vw;
+    height: 8vw;
+    margin: 2% 2% 2% 0%;
+    border-radius: 50%;
+}
+
+.birch {
+    background-color: #c2b1a9;
+}
+
+.granite {
+    background-color: #101113;
+}
 
 /*DESK- and LAPTOP STYLE*/
 
