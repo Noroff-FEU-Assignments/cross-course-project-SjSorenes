@@ -6,7 +6,7 @@ body, html {
 
 /*FONT STYLES*/
 
-h1, h2, h3, h4, p, a, span, input, ::placeholder {
+h1, h2, h3, h4, p, a, span, input, label, ::placeholder {
     font-family: 'Yantramanav', Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +14,7 @@ h1, h2, h3, h4, p, a {
     color: #0a3641;
 }
 
-h1, h2, .hamburger-menu a {
+h1, h2, .hamburger-menu a, .pp-header-price p {
     margin: 0%;
 }
 
@@ -27,16 +27,16 @@ h1 {
     text-transform: none;
 }
 
-h1, h2, h3, h4, nav a, label { 
+h1, h2, h3, h4, nav a, .pp-header-price p { 
     text-transform: uppercase;
     font-weight: 400;
 }
 
-h3, h4, nav a, label {
+h3, h4, nav a {
     margin-bottom: 1%;
 }
 
-h2, .hamburger-menu a {
+h2, .hamburger-menu a, .pp-header-price p {
     font-size: calc(13px + 1.6vw);
 }
 
@@ -58,7 +58,7 @@ h4 {
 }
 
 
-p, span, footer a, .search-bar input, .search::placeholder, .content.product-page a, .content.women-men-page a {
+p, span, label, footer a, .search-bar input, .search::placeholder, .content.product-page a, .content.women-men-page a {
     font-size: calc(13px + 0.5vw);
 }
 
@@ -88,10 +88,6 @@ button {
     color: #979592;
     font-style: italic;
     font-size: calc(11px + 1vw);
-}
-
-.content.product-page a { /*FONT END*/
-
 }
 
 
@@ -151,19 +147,11 @@ header {
 .nav-right a, .hamburger {
     padding: 0 0 0.5% 4%;
 }
-/*
-.nav-bottom input {
-    padding: 0%;
-    border-style: none;
-    background-color: #0a3641;
-} */
 
 .nav-bottom a {
     height: 70%;
     border-style: none;
 }
-
-
 
 .nav-left a img, .nav-right a img, .nav-bottom a img, .hamburger label img {
     height: 98%;
@@ -178,7 +166,6 @@ header {
     display: none;
 }
 
-
 #toggle:checked ~ .hamburger-menu {
     display: block;
 }
@@ -187,11 +174,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: end;
-    transition: 1s ease;
     height: 100%;
 }
 
-label {
+.hamburger label {
     display: flex;
     height: 50%;
 }
@@ -531,7 +517,6 @@ footer section ul {
     background-color: #DFD8D0;
 }
 
-
 .centered {
     text-align: center;
 }
@@ -590,21 +575,59 @@ footer section ul {
 .productcolor-options section {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .productcolor-options a {
     width: 8vw;
     height: 8vw;
-    margin: 2% 2% 2% 0%;
+    margin: 1% 2% 2% 0%;
     border-radius: 50%;
 }
 
 .birch {
     background-color: #c2b1a9;
+    border: solid 1px #4d4d4d;
+    box-shadow: inset 0px 0px 0px 0.4vw #ffffff;
+    padding: 0.4vw;
 }
 
 .granite {
-    background-color: #101113;
+    background-color: rgb(32, 36, 39);
+}
+
+select {
+    width: 100%;
+}
+
+.pp-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 6% 0%;
+}
+
+.pp-header-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 0% 3%;
+}
+
+.dark-button {
+    display: flex;
+    background-color: #0A3641;
+    background-image: url(../images/icon-basket-light.png);
+    background-repeat: no-repeat;
+    background-size: 2.8vh;
+    background-position-y: 35%;
+    background-position-x: 22%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 22%;
+    margin: 5% 0 15%;
+    font-size: calc(13px + 0.5vw);
+    color: #DFD8D0;
 }
 
 /*DESK- and LAPTOP STYLE*/
@@ -871,6 +894,14 @@ footer section ul {
 
     .follow img {
         width: 100%;
+    }
+
+    .granite {
+        background-color: rgba(32, 36, 39, 0.623);
+    }
+    
+    .granite:hover {
+        background-color: rgb(32, 36, 39);
     }
 
 }
