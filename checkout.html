@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="From the harsh coastline of Norway, Rainydays knows weather and the importance of quality clothing" />
-    <title>Rainydays | Checkout</title>
+    <title>Basket and checkout | Rainydays</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +13,76 @@
 </head>
 
 <body>
-    <header>
+    <header class="checkout-header">
         <section class="desktop-logo">
             <a href="index.html"><img src="/images/logo-light-simple.png" alt="Rainydays logo"></a>
         </section>
+        <nav class="desktop-nav">
+            <section class="desktop-search">
+                <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
+            </section>
+            <section class="desktop-menu">
+                <nav>
+                    <ul>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="equipment.html">Equipment</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="desktop-myarea">
+                <a href="my-page/favorites.html">
+                    <img src="/images/icon-favorites.png" alt="Favorites icon">
+                </a>
+                <a href="my-page.html">
+                    <img id="my-page" src="images/icon-user.png" alt="My page icon">
+                </a>
+                <a href="basket.html">
+                    <img id="basket" src="images/icon-basket.png" alt="Basket icon">
+                </a>
+            </section>
+        </nav>
         <nav class="mobile-nav">
             <section class="nav-top">
                 <section class="nav-left">
                     <a href="index.html"><img src="/images/logo-light-simple.png" alt="Rainydays logo"></a>
                 </section>
                 <section class="nav-right">
-                  
-                    
-                    <!-- SOME BUTTON TO BRING YOU TO PREVIOUS PAGE OR BASKET -->
+                    <a href="my-page.html">
+                        <img id="my-page" src="images/icon-user-light.png" alt="My page icon">
+                    </a>
+                    <a href="basket.html">
+                        <img id="basket" src="images/icon-basket-light.png" alt="Basket icon">
+                    </a>
 
+                    <section class="hamburger">
+                        <label for="toggle">
+                            <img src="images/icon-hamburger.png" alt="Hamburger menu icon">
+                            <input type="checkbox" id="toggle" />
+                            <section class="hamburger-menu">
+                                <h2>Menu</h2>
+                                <nav>
+                                    <ul>
+                                        <li><a href="women.html">Women</a></li>
+                                        <li><a href="men.html">Men</a></li>
+                                        <li><a href="equipment.html">Equipment</a></li>
+                                        <li><a href="stores.html">Stores</a></li>
+                                        <li><a href="contact.html">Contact us</a></li>
+                                        <li><a href="about.html">About us</a></li>
+                                    </ul>
+                                </nav>
+                            </section>
+                    </section>
+
+
+                </section>
+            </section>
+            <section class="nav-bottom">
+                <section class="search-bar">
+                    <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
                 </section>
             </section>
         </nav>
