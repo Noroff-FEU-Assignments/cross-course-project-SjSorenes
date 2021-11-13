@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="From the harsh coastline of Norway, Rainydays knows weather and the importance of quality clothing" />
+    <meta name="description"
+        content="From the harsh coastline of Norway, Rainydays knows weather and the importance of quality clothing" />
     <title>Basket and checkout | Rainydays</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,49 +47,97 @@
             </section>
         </nav>
         <nav class="mobile-nav">
-            <section class="nav-top">
-                <section class="nav-left">
-                    <a href="index.html"><img src="/images/logo-light-simple.png" alt="Rainydays logo"></a>
-                </section>
-                <section class="nav-right">
-                    <a href="my-page.html">
-                        <img id="my-page" src="images/icon-user-light.png" alt="My page icon">
-                    </a>
-                    <a href="basket.html">
-                        <img id="basket" src="images/icon-basket-light.png" alt="Basket icon">
-                    </a>
 
-                    <section class="hamburger">
-                        <label for="toggle">
-                            <img src="images/icon-hamburger.png" alt="Hamburger menu icon">
-                            <input type="checkbox" id="toggle" />
-                            <section class="hamburger-menu">
-                                <h2>Menu</h2>
-                                <nav>
-                                    <ul>
-                                        <li><a href="women.html">Women</a></li>
-                                        <li><a href="men.html">Men</a></li>
-                                        <li><a href="equipment.html">Equipment</a></li>
-                                        <li><a href="stores.html">Stores</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                        <li><a href="about.html">About us</a></li>
-                                    </ul>
-                                </nav>
-                            </section>
+            <section class="nav-background">
+                <section class="nav-top">
+                    <a class="back-arrow" href="#" onclick="history.go(-1)"><img src="/images/icon-arrow-left-light.png"
+                            alt="Arrow left"></a>
+                    <section class="nav-left">
+                        <a href="index.html"><img src="/images/logo-light-simple.png" alt="Rainydays logo"></a>
                     </section>
 
+                    <section class="nav-right">
+                        <a href="my-page.html">
+                            <img id="my-page" src="images/icon-user-light.png" alt="My page icon">
+                        </a>
+                        <a href="basket.html">
+                            <img id="basket" src="images/icon-basket-light.png" alt="Basket icon">
+                        </a>
 
+                        <section class="hamburger">
+                            <label for="toggle">
+                                <img src="images/icon-hamburger.png" alt="Hamburger menu icon">
+                                <input type="checkbox" id="toggle" />
+                                <section class="hamburger-menu">
+                                    <h2>Menu</h2>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="women.html">Women</a></li>
+                                            <li><a href="men.html">Men</a></li>
+                                            <li><a href="equipment.html">Equipment</a></li>
+                                            <li><a href="stores.html">Stores</a></li>
+                                            <li><a href="contact.html">Contact us</a></li>
+                                            <li><a href="about.html">About us</a></li>
+                                        </ul>
+                                    </nav>
+                                </section>
+                        </section>
+                    </section>
                 </section>
             </section>
-            <section class="nav-bottom">
-                <section class="search-bar">
-                    <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
+
+
+            <section class="nav-background bottom">
+                <section class="nav-bottom">
+                    <section class="search-bar">
+                        <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
+                    </section>
                 </section>
             </section>
         </nav>
     </header>
     <main>
-        
+        <section class="blocky-container">
+            <h1>Checkout</h1>
+        </section>
+        <section class="content">
+            <section class="background">
+                <form action="" method="POST">
+                    <h2>Delivery</h2>
+                    <section class="entered-address">
+                        <section class="the-address">
+                            <p>Entered Nameson</p>
+                            <p>Address Road</p>
+                            <p>Cottage House</p>
+                            <p>GU33 6HF Town</p>
+                        </section>
+                        <a class="edit" href="#" onclick="alert('This would open a form on the same page where you could edit your address')"><img src="/images/icon-edit.png"  alt="Edit"></a>
+                    </section>
+                    <h2>Payment</h2>
+                    <label for="card-name">Name as it appears on card</label>
+                    <input type="text" id="card-name">
+                    <label for="card-nr">Card number</label>
+                    <input type="number" name="" id="card-number">
+                    <section class="justanothercontainer"> 
+                        <section class="width-control">
+                            <label for="exp-date">Expiry date</label><input type="number" placeholder="mm/yy" pattern="[0-9]{2}-[0-9]{2}" maxlength="5"></section>
+                        
+                        <section class="another-width">
+                            <label for="cvc">CVC</label><input type="number" maxlength="3" id="cvc">
+                        </section>
+                    </section>
+                    <section class="price-info">
+                        <section><p>Order value</p><p>£49.00</p></section>
+                        <section><p>Shipping</p><p>£3.99</p></section>
+                        <section><p>Total</p><p>£52.99</p></section>
+                    </section>
+                    <a class="dark-button" href="thankyou.html">Complete purchase</a>
+                    <p>You will receive an order confirmation at youremail@email.com</p>
+                </form>
+            </section>
+        </section>
+
     </main>
+
 
 </body>
