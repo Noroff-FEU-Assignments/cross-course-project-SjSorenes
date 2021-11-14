@@ -293,6 +293,11 @@ main, .banner a {
     height: 60vh;
 }
 
+.banner img {
+    object-fit: cover;
+    width: 100%;
+}
+
 .hidden {
     display: none;
 }
@@ -321,6 +326,10 @@ main, .banner a {
 }
 
 /*WOMEN-MEN*/
+
+.breadcrumb-desktop {
+    display: none;
+}
 
 .content {
     display: block;
@@ -351,7 +360,17 @@ main, .banner a {
     border-radius: 50%;
 }
 
+/* FILTER */
+
+.filter {
+    display: none;
+}
+
 /*PRODUCTS*/
+
+.products-displayed-filter {
+    display: none;
+}
 
 .products-displayed {
     display: flex;
@@ -359,6 +378,13 @@ main, .banner a {
     flex-wrap: wrap;
     margin: 0%;
     column-gap: 6%;
+}
+
+.products-displayed, .filter {
+    flex: 1 1 auto;
+    flex-grow: 1;
+    margin: 5% 0% 5% 0%;
+    height: 100%;
 }
 
 .products-displayed .article-container {
@@ -544,6 +570,14 @@ footer section ul {
     padding: 3% 0%;
 }
 
+.product-page-info {
+    display: block;
+}
+
+.product-page-image {
+    display: block;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -719,6 +753,10 @@ select {
     justify-content: space-between;
 }
 
+.price-info-desktop {
+    display: none;
+}
+
 .nomember-member {
     position: relative;
     display: flex;
@@ -882,9 +920,6 @@ select {
     min-height: 10vh;
 }
 
-.about .content img {
-    width: 100%;
-}
 
 /*DESK- and LAPTOP STYLE*/
 
@@ -1081,6 +1116,33 @@ select {
         flex: 1 1 20%;
     }
 
+    .products-displayed-filter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .products-displayed-filter select {
+        margin-top: 10px;
+        border: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    .products-displayed-filter select:not(:last-child) {
+        display: block;
+        margin-right: 2%; 
+        text-align: left;
+        width: 10%;
+    }
+
+    .products-displayed-filter select:last-child {
+        width: 10%;
+        margin-left: auto;
+        justify-self: end;
+    }
+
     .products-displayed h2 {
         margin-block-start: 0%;
         margin-block-end: 0%;
@@ -1090,6 +1152,90 @@ select {
         margin: unset;
         width: 20%;
 
+    }
+
+    .blocky-container {
+        display: none;
+    }
+
+    .blocky-container.checkout-blocky-container, .blocky-container.basket-blocky-container {
+        display: block;
+        text-align: center;
+    }
+
+    .women-men-page h1 {
+        flex: 33% 0 auto;
+    }
+
+    .breadcrumb-desktop {
+        display: block;
+        margin: 2% 2% 2% 2%;
+
+    }
+
+    .women-men-page .products-displayed {
+        flex: 66% 0 auto;
+    }
+
+    .women-men-page .centered {
+        display: none;
+    }
+
+    .women-men-page .filter {  
+        display: block;
+        width: 60%;
+    }
+
+    .women-men-page .filter ul {
+        list-style-type: none;    
+        padding-inline-start: 0px;
+    }
+    
+    .women-men-page .filter ul li {
+        padding: 5px 0px 5px 0px;
+    }
+
+    .women-men-page .filter ul li:hover {
+        transform: scale(.9);
+    }
+
+    .women-men-page {
+        display: flex;
+    }
+
+    .women-men-page .article-container {
+        height: inherit;
+    }
+
+    .women-men-page .container {
+        display: none;
+    }
+    
+    .content.women-men-page, .content.product-page {
+        padding: 0px;
+        margin: 0% 2% 0% 2%;
+    }
+
+    .product-page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-page-info {
+        display: none;
+    } 
+
+    .product-page-info-desktop {
+        flex: 0 0 50%;
+    }
+
+    .product-page-image {
+        flex: 0 0 50%;
+    }
+
+    .product-page .products-displayed {
+        flex: 0 0 100%;
     }
 
     article:hover {
@@ -1158,6 +1304,121 @@ select {
     
     .granite:hover {
         background-color: rgb(32, 36, 39);
+    }
+
+    .centered {
+        text-align: left;
+    }
+
+
+    /*CHECKOUT AND BASKET*/
+
+    .checkout-header, .basket-header {
+        height: 14vh;
+    }
+
+    .checkout-header .desktop-nav, .basket-header .desktop-nav {
+        display: none;
+    }
+
+    .basket, .checkout {
+        margin: 0% 12% 0% 12%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .basket .details {
+        flex: 1 1 45%;
+        margin-left: 5%; 
+    }
+
+    .checkout .background {
+        flex: 1 1 45%;
+        margin-left: 5%; 
+    }
+
+    .price-info-desktop {
+        display: flex;
+        flex: 1 1 100%;
+        width: 100%;
+        margin-top: 5%;
+        padding-top: 5%;
+        border-top: 1px solid #cccccc
+    }
+
+    .price-info {
+        display: none;
+    }
+
+    .price-info-desktop section:first-child {
+        margin-left: 5%;
+    }
+
+    .price-info-desktop section:last-child {
+        margin-left: auto;
+        margin-right: 5%;
+    }
+
+    .basket-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 1 50%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 3% 0;
+        border-bottom: unset;
+    }
+
+
+    .banner img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .about .products-displayed .article-container {
+        display: block;
+    }
+
+    .about .products-displayed .article-container img {
+        margin: unset;
+        height: 20%;
+    }
+    
+    .upphill-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .uphill-img {
+        padding: 2%;
+        width: 50%;
+        object-fit: contain;
+    }
+
+    .upphill-description {
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        margin-left: 2%;
+        margin-top: 5%;;
+    }
+
+
+    .checkout .basket-items img {
+        display: flex;
+        align-self: flex-start;
+        object-fit: contain;
+
+    }
+
+    .basket-blocky-container, .checkout-blocky-container {
+        background-color: white;
+        padding: .5% 0% .5% 0%;
+        margin: 0px;
     }
 
 }

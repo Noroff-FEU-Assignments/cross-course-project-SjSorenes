@@ -96,7 +96,7 @@
         </nav>
     </header>
     <main>
-        <section class="blocky-container">
+        <section class="blocky-container basket-blocky-container">
             <h1>Basket</h1>
         </section>
         <section class="content basket">
@@ -111,60 +111,67 @@
                     <p>£49</p>
 
                 </section>
+                <section class="price-info-desktop">
+                    <section><p>Shipping</p><p>£3.99</p></section>
+                    <section><p>Total</p><p>£52.99</p></section>
+                </section>
 
             </section>
-            <section class="price-info">
-                <section><p>Shipping</p><p>£3.99</p></section>
-                <section><p>Total</p><p>£52.99</p></section>
-            </section>
-            <section>
-                <section class="nomember-member">
-                    <section class="tab">
-                      <input type="radio" id="nomember" name="membership-tabs" checked>
-                      <label for="nomember">New customer</label>
-                      <section class="customer-info">
-                        <form action="" method="POST">
-                            <h3>Please provide</h3>
-                            <p>E-mail address</p>
-                            <input type="email">
-                            <p>First name</p>
-                            <input type="text">
-                            <p>Surname</p>
-                            <input type="text">
-                            <p>Address</p>
-                            <input type="text">
-                            <p>Flat number / house name</p>
-                            <input type="text">
-                            <p>City / town</p>
-                            <input type="text">
-                            <p>Postcode</p>
-                            <input type="text">
-                            <p>Check the box below to sign up and make the checkout faster next time</p>
-                            <section>
-                                <input type="checkbox" id="become-member">
-                                <label for="become-member">Yes, I would like to become a member</label>
-                            </section>
-                            <a class="dark-button" href="checkout.html">Continue to payment</a>
-                        </form>
-                      </section>
+            
+            <section class="details">
+                <section class="price-info">
+                    <section><p>Shipping</p><p>£3.99</p></section>
+                    <section><p>Total</p><p>£52.99</p></section>
+                </section>
+                <section>
+                    <section class="nomember-member">
+                        <section class="tab">
+                        <input type="radio" id="nomember" name="membership-tabs" checked>
+                        <label for="nomember">New customer</label>
+                        <section class="customer-info">
+                            <form action="" method="POST">
+                                <h3>Please provide</h3>
+                                <p>E-mail address</p>
+                                <input type="email">
+                                <p>First name</p>
+                                <input type="text">
+                                <p>Surname</p>
+                                <input type="text">
+                                <p>Address</p>
+                                <input type="text">
+                                <p>Flat number / house name</p>
+                                <input type="text">
+                                <p>City / town</p>
+                                <input type="text">
+                                <p>Postcode</p>
+                                <input type="text">
+                                <p>Check the box below to sign up and make the checkout faster next time</p>
+                                <section>
+                                    <input type="checkbox" id="become-member">
+                                    <label for="become-member">Yes, I would like to become a member</label>
+                                </section>
+                                <a class="dark-button" href="checkout.html">Continue to payment</a>
+                            </form>
+                        </section>
+                        </section>
+                        <section class="tab">
+                        <input type="radio" id="member" name="membership-tabs">
+                        <label for="member">Returning customer</label>
+                        <section class="customer-info">
+                            <form action="" method="POST">
+                                <h3>Sign in</h3>
+                                <label for="email">Email</label>
+                                <input type="text" id="email">
+                                <label for="password">Password</label>
+                                <input type="password" id="password">
+                                <a class="dark-button" href="checkout.html">Continue to payment</a>
+                            </form>
+                            
+                            
+                        </section>
+                        </section>
                     </section>
-                    <section class="tab">
-                      <input type="radio" id="member" name="membership-tabs">
-                      <label for="member">Returning customer</label>
-                      <section class="customer-info">
-                        <form action="" method="POST">
-                            <h3>Sign in</h3>
-                            <label for="email">Email</label>
-                            <input type="text" id="email">
-                            <label for="password">Password</label>
-                            <input type="password" id="password">
-                            <a class="dark-button" href="checkout.html">Continue to payment</a>
-                        </form>
-                        
-                        
-                      </section>
-                    </section>
-                  </section>
+                </section>
             </section>
         </section>
 

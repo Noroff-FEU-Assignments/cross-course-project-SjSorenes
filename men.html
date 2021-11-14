@@ -91,15 +91,21 @@
                 </section>
             </section>
         </nav>
-        
+
     </header>
+
     <main>
+        <section class="breadcrumb-desktop">
+            <a href="/index.html">Home</a><span> / </span><a href="">Men</a>
+        </section>
         <section class="blocky-container">
             <h1>Men</h1>
         </section>
-        <section class="content">
-            <p>Home / Men</p>
-            <section class="container">               
+        <section class="content women-men-page">
+            <section class="centered">
+                <a href="/index.html">Home</a><span> / </span><a href="">Men</a>
+            </section>
+            <section class="container">
                 <section class="category-button">
                     <a href="women/jackets.html">Jackets</a>
                 </section>
@@ -110,10 +116,36 @@
                     <a href="women/trousers.html">Trousers</a>
                 </section>
             </section>
-
+            <section id="filter" class="filter">
+                <h2>Men</h2>
+                <ul>
+                    <li><a href="women/newin.html">New inn</a></li>
+                    <li><a href="women/bestsellers.html">Bestsellers</a></li>
+                    <li><a href="women/jackets.html">Jackets</a></li>
+                    <li><a href="women/coats.html">Coats</a></li>
+                    <li><a href="women/trousers.html">Trousers</a></li>
+                </ul>
+            </section>
             <section id="bestsellers" class="products-displayed">
-                <h2>All mens</h2>
-
+                <h2>All Men's</h2>
+                <section class="products-displayed-filter">
+                    <select id="size-select">
+                        <option value="default">Size</option>
+                        <option value="default">XL</option>
+                        <!-- her kan man legge inn flere options -->
+                    </select>
+                    <select id="season-select">
+                        <option value="default">Season</option>
+                        <!-- her kan man legge inn flere options -->
+                    </select>
+                    <select id="color-select">
+                        <option value="default">Colour</option>
+                        <!-- her kan man legge inn flere options -->
+                    </select>
+                    <select  id="sortby">
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </section>
                 <section class="article-container">
                     <a href="product.html">
                         <article>
@@ -221,6 +253,9 @@
             </section>
 
         </section>
+
+
+
     </main>
     <footer>
         <section class="footer-nav">

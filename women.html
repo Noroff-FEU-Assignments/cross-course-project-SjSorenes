@@ -95,6 +95,9 @@
     </header>
 
     <main>
+        <section class="breadcrumb-desktop">
+            <a href="/index.html">Home</a><span> / </span><a href="">Women</a>
+        </section>
         <section class="blocky-container">
             <h1>Women</h1>
         </section>
@@ -113,10 +116,36 @@
                     <a href="women/trousers.html">Trousers</a>
                 </section>
             </section>
-
+            <section id="filter" class="filter">
+                <h2>Women</h2>
+                <ul>
+                    <li><a href="women/newin.html">New inn</a></li>
+                    <li><a href="women/bestsellers.html">Bestsellers</a></li>
+                    <li><a href="women/jackets.html">Jackets</a></li>
+                    <li><a href="women/coats.html">Coats</a></li>
+                    <li><a href="women/trousers.html">Trousers</a></li>
+                </ul>
+            </section>
             <section id="bestsellers" class="products-displayed">
                 <h2>All womens</h2>
-
+                <section class="products-displayed-filter">
+                    <select id="size-select">
+                        <option value="default">Size</option>
+                        <option value="default">XL</option>
+                        <!-- her kan man legge inn flere options -->
+                    </select>
+                    <select id="season-select">
+                        <option value="default">Season</option>
+                        <!-- her kan man legge inn flere options -->
+                    </select>
+                    <select id="color-select">
+                        <option value="default">Colour</option>
+                        <!-- her kan man legge inn flere options -->
+                    </select>
+                    <select  id="sortby">
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </section>
                 <section class="article-container">
                     <a href="product.html">
                         <article>
