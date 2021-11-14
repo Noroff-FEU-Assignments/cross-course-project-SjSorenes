@@ -825,7 +825,7 @@ select {
     margin-bottom: 3%;
 }
 
-.background form h2:last-of-type {
+.background form h2:last-of-type, .about .content h2, .about .content img {
     margin-top: 6%;
 }
 
@@ -870,7 +870,7 @@ select {
     border-top: 1px solid #a5a5a5;
 }
 
-.background form a:last-of-type {
+.background form a:last-of-type, .about .content h2 {
     margin-bottom: 3%;
 }
 
@@ -880,6 +880,10 @@ select {
 
 .more-input-space {
     min-height: 10vh;
+}
+
+.about .content img {
+    width: 100%;
 }
 
 /*DESK- and LAPTOP STYLE*/
