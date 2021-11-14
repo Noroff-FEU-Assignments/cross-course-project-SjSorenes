@@ -656,7 +656,7 @@ select {
     color: #DFD8D0 !important;
 }
 
-[type="button"] {
+[type="button"], .contact-info {
     margin: 6% 0 0 !important;
 }
 
@@ -872,6 +872,14 @@ select {
 
 .background form a:last-of-type {
     margin-bottom: 3%;
+}
+
+.contact-info a {
+    text-decoration: underline;
+}
+
+.more-input-space {
+    min-height: 10vh;
 }
 
 /*DESK- and LAPTOP STYLE*/

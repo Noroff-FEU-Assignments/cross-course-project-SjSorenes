@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="You are welcome to contact us, we would love to hear from you" />
-    <title>Rainydays | Contact us</title>
+    <title>Contact us | Rainydays</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,50 +46,75 @@
             </section>
         </nav>
         <nav class="mobile-nav">
-            <section class="nav-top">
-                <section class="nav-left">
-                    <a href="index.html"><img src="/images/logo-light-simple.png" alt="Rainydays logo"></a>
-                </section>
-                <section class="nav-right">
-                    <a href="my-page.html">
-                        <img id="my-page" src="images/icon-user-light.png" alt="My page icon">
-                    </a>
-                    <a href="basket.html">
-                        <img id="basket" src="images/icon-basket-light.png" alt="Basket icon">
-                    </a>
+            <section class="nav-background">
+                <section class="nav-top">
 
-                    <section class="hamburger">
-                        <label for="toggle">
-                            <img src="images/icon-hamburger.png" alt="Hamburger menu icon">
-                            <input type="checkbox" id="toggle" />
-                            <section class="hamburger-menu">
-                                <h2>Menu</h2>
-                                <nav>
-                                    <ul>
-                                        <li><a href="women.html">Women</a></li>
-                                        <li><a href="men.html">Men</a></li>
-                                        <li><a href="equipment.html">Equipment</a></li>
-                                        <li><a href="stores.html">Stores</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                        <li><a href="about.html">About us</a></li>
-                                    </ul>
-                                </nav>
-                            </section>
+                    <section class="nav-left">
+                        <a href="index.html"><img src="/images/logo-light-simple.png" alt="Rainydays logo"></a>
                     </section>
 
+                    <section class="nav-right">
+                        <a href="my-page.html">
+                            <img id="my-page" src="images/icon-user-light.png" alt="My page icon">
+                        </a>
+                        <a href="basket.html">
+                            <img id="basket" src="images/icon-basket-light.png" alt="Basket icon">
+                        </a>
 
+                        <section class="hamburger">
+                            <label for="toggle">
+                                <img src="images/icon-hamburger.png" alt="Hamburger menu icon">
+                                <input type="checkbox" id="toggle" />
+                                <section class="hamburger-menu">
+                                    <h2>Menu</h2>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="women.html">Women</a></li>
+                                            <li><a href="men.html">Men</a></li>
+                                            <li><a href="equipment.html">Equipment</a></li>
+                                            <li><a href="stores.html">Stores</a></li>
+                                            <li><a href="contact.html">Contact us</a></li>
+                                            <li><a href="about.html">About us</a></li>
+                                        </ul>
+                                    </nav>
+                                </section>
+                        </section>
+                    </section>
                 </section>
             </section>
-            <section class="nav-bottom">
-                <section class="search-bar">
-                    <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
+
+            <section class="nav-background bottom">
+                <section class="nav-bottom">
+                    <section class="search-bar">
+                        <input type="text" placeholder="Search..." name="search" autocomplete="off"></input>
+                    </section>
                 </section>
             </section>
         </nav>
-
+        
     </header>
     <main>
-        
+        <section class="blocky-container">
+            <h1>Contact us</h1>
+        </section>
+        <section class="content">
+            <section class="contact-info">
+                <p>You can contact us by phone, email, on social platforms, or the form provided.</p>
+                <p>If you have a question we recommend that you consult the <a href="FQA-help.html">Frequently Asked Questions (FAQ)</a>, as our most commonly asked questions are answered there</p>
+            </section>
+            <section class="background">
+                <form action="" method="POST">
+                    <h2>Send us a message</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="email">E-mail address</label>
+                    <input type="email" id="email">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" class="more-input-space">
+                    <a class="dark-button" href="messagesent.html">Send message</a>
+                </form>
+            </section>
+        </section>
     </main>
     <footer>
         <section class="footer-nav">
