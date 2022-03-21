@@ -91,30 +91,40 @@
                 </section>
             </section>
         </nav>
-        
+
     </header>
     <main>
         <section class="blocky-container">
             <h1>Contact us</h1>
         </section>
-        <section class="content">
-            <section class="contact-info">
-                <p>You can contact us by phone, email, on social platforms, or the form provided.</p>
-                <p>If you have a question we recommend that you consult the <a href="FQA-help.html">Frequently Asked Questions (FAQ)</a>, as our most commonly asked questions are answered there</p>
+        <div class="content-parent">
+            <section class="content">
+                <section class="contact-info">
+                    <p>You can contact us by phone, email, on social platforms, or the form provided.</p>
+                    <p>If you have a question we recommend that you consult the <a href="FQA-help.html">Frequently Asked
+                            Questions (FAQ)</a>, as our most commonly asked questions are answered there</p>
+                </section>
+                <section class="background">
+                    <form id="contact-form" action="submit" method="POST">
+                        <h2>Send us a message</h2>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        <p class="form-error" id="name-error">Please enter your name</p>
+                        <label for="email">E-mail address</label>
+                        <input type="email" id="email">
+                        <p class="form-error" id="email-error">Please enter a valid email adress. Example:
+                            name@email.com</p>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="120" rows="10" style="max-width: 100%;"></textarea>
+                        <p class="form-error" id="message-error">Please enter a message containing at least 10
+                            characters
+                        </p>
+                        <button class="dark-button" id="contact-submit" type="submit">Send message</button>
+                    </form>
+                </section>
             </section>
-            <section class="background">
-                <form action="" method="POST">
-                    <h2>Send us a message</h2>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                    <label for="email">E-mail address</label>
-                    <input type="email" id="email">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="120" rows="10" style="max-width: 100%;"></textarea>
-                    <a class="dark-button" href="messagesent.html">Send message</a>
-                </form>
-            </section>
-        </section>
+        </div>
+        <script type="module" src="/js/contact.js"></script>
     </main>
     <footer>
         <section class="footer-nav">

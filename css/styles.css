@@ -36,7 +36,7 @@ h3, h4, nav a {
 }
 
 h2, .hamburger-menu a, .pp-header-price p, .price-info section:last-of-type p {
-    font-size: calc(14px + 1.3vw);
+    font-size: 30px;
 }
 
 .hamburger-menu h2 {
@@ -334,7 +334,7 @@ main, .banner a {
 .content {
     display: block;
     position: relative;
-    margin: 0% 6% 0% 6%;
+    max-width: 1080px;
 }
 
 .women-men {
@@ -384,7 +384,6 @@ main, .banner a {
     flex: 1 1 auto;
     flex-grow: 1;
     margin: 5% 0% 5% 0%;
-    height: 100%;
 }
 
 .products-displayed .article-container {
@@ -916,6 +915,13 @@ select {
     text-decoration: underline;
 }
 
+.form-error {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin: 2px;
+}
+
 .more-input-space {
     min-height: 10vh;
 }
@@ -928,16 +934,16 @@ select {
     /*FONTS*/
 
     .desktop-menu li {
-        font-size: calc(14px + 0.2vw);
+        font-size: 18px;
         font-weight: bold;
     }
 
     h2 {
-        font-size: calc(24px + 0.5vw);
+        font-size: 30px;
     }
 
     footer a {
-        font-size: calc(12px + 0.5vw);
+        font-size: 18px;
     }
 
     /*DESKTOP NAV*/
@@ -1045,7 +1051,7 @@ select {
         background-color: #DFD8D0;
         color: #81807e;
         font-style: italic;
-        font-size: calc(15px + 0.2vw);
+        font-size: 18px;
     }
 
     .desktop-myarea {
@@ -1097,6 +1103,11 @@ select {
     button:hover, .promo-container button:hover {
         background-color: rgba(255, 255, 255, 50%);
         transition: 1.5s;
+    }
+
+    .content-parent {
+        display: flex;
+        justify-content: center;
     }
 
     .women-men a {
