@@ -1,12 +1,18 @@
 const form = document.querySelector("#checkout-form");
-const name = document.querySelector("#given-name");
-const nameError = document.querySelector("#given-name-error");
-const name = document.querySelector("#given-name");
-const nameError = document.querySelector("#given-name-error");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#email-error");
-const message = document.querySelector("#message");
-const messageError = document.querySelector("#message-error");
+const givenName = document.querySelector("#given-name");
+const givenNameError = document.querySelector("#given-name-error");
+const surname = document.querySelector("#surname");
+const smurnameError = document.querySelector("#surname-error");
+const address = document.querySelector("#address");
+const addressError = document.querySelector("#address-error");
+const address2 = document.querySelector("#flat-house");
+const address2Error = document.querySelector("#flat-house-error");
+const city = document.querySelector("#city");
+const cityError = document.querySelector("#city-error");
+const postcode = document.querySelector("#postcode");
+const postcodeError = document.querySelector("#postcode-error");
 
 
 function validateForm(event) {
