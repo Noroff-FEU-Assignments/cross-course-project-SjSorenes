@@ -9,7 +9,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Yantramanav&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Yantramanav&display=swap">
     <!-- Hotjar Tracking Code for https://flamboyant-kare-065a29.netlify.app/ -->
     <script>
         (function(h,o,t,j,a,r){
@@ -53,6 +53,7 @@
                 </a>
                 <a href="basket.html">
                     <img id="basket" src="images/icon-basket.png" alt="Basket icon">
+                    <a class="basket-count"></a>
                 </a>
             </section>
         </nav>
@@ -70,6 +71,7 @@
                         </a>
                         <a href="basket.html">
                             <img id="basket" src="images/icon-basket-light.png" alt="Basket icon">
+                            <a class="basket-count"></a>
                         </a>
 
                         <section class="hamburger">
@@ -143,7 +145,7 @@
                             <option value="xl">XL</option>
                         </select>
                     </form>
-                    <a href="basket.html" class="dark-button add-basket">Add to basket</a>
+                    <button onclick="addToBasket()" class="dark-button add-basket">Add to basket</button>
 
                 </section>
             </section>
@@ -280,3 +282,4 @@
 
     </footer>
 </body>
+<script type="text/javascript" src="./js/basket.js"></script>

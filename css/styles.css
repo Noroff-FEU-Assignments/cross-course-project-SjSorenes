@@ -5,7 +5,7 @@ body, html {
 
 /*FONT STYLES*/
 
-h1, h2, h3, h4, p, a, span, input, label, textarea, ::placeholder {
+h1, h2, h3, h4, p, a, span, input, label, textarea, ::placeholder, .pp-info-tabs {
     font-family: 'Yantramanav', Arial, Helvetica, sans-serif;
 }
 
@@ -36,7 +36,7 @@ h3, h4, nav a {
 }
 
 h2, .hamburger-menu a, .pp-header-price p, .price-info section:last-of-type p {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .hamburger-menu h2 {
@@ -58,7 +58,7 @@ h4 {
 
 
 p, span, label, footer a, .search-bar input, .search::placeholder, .content.product-page a, .content.women-men-page a {
-    font-size: calc(13px + 0.5vw);
+    font-size: 16px;
 }
 
 input, textarea {
@@ -75,7 +75,7 @@ p {
 }
 
 button, .dark-button, [type="button"] {
-    font-size: calc(10.5px + 1vw);
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -327,14 +327,13 @@ main, .banner a {
 
 /*WOMEN-MEN*/
 
-.breadcrumb-desktop {
+.breadcrumb-desktop, .breadcrumb-desktop2 {
     display: none;
 }
 
 .content {
     display: block;
     position: relative;
-    max-width: 1080px;
 }
 
 .women-men {
@@ -349,7 +348,7 @@ main, .banner a {
     justify-content: center;
 }
 
-.women h2, .men h2, .products-displayed article h3, .promo-container h2, footer section h2, .follow h3 {
+.women h2, .men h2, .products-displayed article h3, .promo-container h2, footer div h2, .follow h3 {
     display: none;
 }
 
@@ -391,7 +390,6 @@ main, .banner a {
     flex: 1 1 40%;
     flex-grow: 1;
     margin: 3% 0% 3% 0%;
-    height: 100%;
     background-color: #DFD8D0;
 }
 
@@ -483,16 +481,16 @@ footer {
     margin: 5% 0 0 0;
 }
 
-footer h3, footer a, footer section p, .search-bar input, nav a {
+footer h3, footer a, footer div p, .search-bar input, nav a {
     color: #DFD8D0;
 }
 
-footer section ul li {
+footer div ul li {
     list-style: none;
     padding: 1.5% 0 1.5% 0;
 }
 
-footer section ul {
+footer div ul {
     padding: 0%;
     margin-block-start: 0.5rem;
 }
@@ -605,7 +603,6 @@ footer section ul {
 
 .productview-images {
     justify-content: space-between;
-    padding-top: 6%;
 }
 
 .main-img {
@@ -627,15 +624,15 @@ footer section ul {
     height: 20%;
 }
 
-.productcolor-options section {
+.productcolor-options div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .productcolor-options a {
-    width: 8vw;
-    height: 8vw;
+    width: 20px;
+    height: 20px;
     margin: 1% 2% 2% 0%;
     border-radius: 50%;
 }
@@ -643,7 +640,7 @@ footer section ul {
 .birch {
     background-color: #c2b1a9;
     border: solid 1px #4d4d4d;
-    box-shadow: inset 0px 0px 0px 0.4vw #ffffff;
+    box-shadow: inset 0px 0px 0px 3px #ffffff;
     padding: 0.4vw;
 }
 
@@ -664,7 +661,6 @@ select {
 
 .pp-header-price {
     display: flex;
-    justify-content: space-between;
     margin: 0% 0% 3%;
 }
 
@@ -687,6 +683,10 @@ select {
     margin: 3% 0 0;
     padding: 2% 0;
     color: #DFD8D0 !important;
+}
+
+.dark-button:hover {
+    cursor: pointer;
 }
 
 [type="button"], .contact-info {
@@ -926,6 +926,31 @@ select {
     min-height: 10vh;
 }
 
+.basket-count {
+    color:white;
+    padding: 0px !important;
+    display: block;
+    justify-content: center;
+    font-size: 14px;
+    max-height: 25px;
+    width:15px;
+    top: -2px;
+    right:5%;
+    border-radius: 50%;
+    background-color:black;
+    position: absolute;
+    animation: in 2s ease ;
+}
+
+
+@keyframes in {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 /*DESK- and LAPTOP STYLE*/
 
@@ -939,7 +964,7 @@ select {
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 22px;
     }
 
     footer a {
@@ -1105,6 +1130,19 @@ select {
         transition: 1.5s;
     }
 
+    .c-restrainer {
+        max-width: 1080px;
+    }
+
+    .center-children {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row-container {
+        display: flex;
+    }
+
     .content-parent {
         display: flex;
         justify-content: center;
@@ -1178,9 +1216,9 @@ select {
         flex: 33% 0 auto;
     }
 
-    .breadcrumb-desktop {
+    .breadcrumb-desktop, .breadcrumb-desktop2 {
         display: block;
-        margin: 2% 2% 2% 2%;
+        margin: 20px 0;
 
     }
 
@@ -1227,21 +1265,52 @@ select {
         margin: 0% 2% 0% 2%;
     }
 
+    .d-gap {
+        gap: 15px;
+    }
+
+    .d-gap-big {
+        gap: 35px;
+    }
+
+    .d-column-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .d-row-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .d-rows-twin {
+        width: 50%;
+    }
+
+    .icon {
+        height: 20px;
+        padding-top: 4px;
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .pp-info-tabs:hover {
+        cursor: pointer;
+    }
+
+    .pp-info-tabs {
+        text-transform: uppercase;
+    }
+    
     .product-page {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .product-page-info {
-        display: none;
-    } 
-
     .product-page-info-desktop {
-        flex: 0 0 50%;
-    }
-
-    .product-page-image {
         flex: 0 0 50%;
     }
 
@@ -1281,7 +1350,7 @@ select {
         height: 10%;
     }
 
-    footer section ul {
+    footer div ul {
         margin-block-start: 2%;
     }
 
@@ -1307,14 +1376,6 @@ select {
 
     .follow img {
         width: 100%;
-    }
-
-    .granite {
-        background-color: rgba(32, 36, 39, 0.623);
-    }
-    
-    .granite:hover {
-        background-color: rgb(32, 36, 39);
     }
 
     .centered {
@@ -1357,6 +1418,23 @@ select {
         padding-top: 5%;
         border-top: 1px solid #cccccc
     }
+
+    
+    .basket-count {
+        color:white;
+        padding: 0px !important;
+        display: block;
+        justify-content: center;
+        font-size: 14px;
+        max-height: 20px;
+        width: 20px;
+        top: -5px;
+        right:4%;
+        border-radius: 50%;
+        background-color:black;
+        position: absolute;
+    }
+
 
     .price-info {
         display: none;
