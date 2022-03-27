@@ -11,6 +11,8 @@ let basketCountList = document.querySelectorAll('.basket-count')
 
 let basketProductList = document.querySelector('.basket-items')
 
+if (basketProductList) {
+
 basketProducts.forEach(function (id) {
     const product = products.find(x => x.id == id)
     basketProductList.innerHTML += `<article class="basket-product">
@@ -30,12 +32,15 @@ const totalCost = products.reduce((x, y) => {
     return x.price + y.price
 })
 
+
 console.log(totalCost)
 
 basketProductList.innerHTML += `<section class="price-info-desktop">
 <section><p>Shipping</p><p>£3.99</p></section>
 <section><p>Total</p><p>£${totalCost}</p></section>
 </section>`
+
+}
 
 // init state
 basketCountList.forEach(function (basketCount) {
