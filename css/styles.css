@@ -939,7 +939,12 @@ select {
     border-radius: 50%;
     background-color:black;
     position: absolute;
-    animation: in 2s ease ;
+    animation: in 1s ease ;
+}
+
+.basket-product {
+    display: flex;
+     padding: 20px
 }
 
 
