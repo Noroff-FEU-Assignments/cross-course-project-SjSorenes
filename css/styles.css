@@ -393,7 +393,7 @@ main, .banner a {
     background-color: #DFD8D0;
 }
 
-.products-displayed article img {
+.products-displayed .article-container img {
     object-fit: cover;
 }
 
@@ -567,11 +567,23 @@ footer div ul {
     padding: 3% 0%;
 }
 
+@keyframes inX {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .product-page-info {
     display: block;
 }
 
 .product-page-image {
+    animation: inX ease 2s;
     display: block;
 }
 
@@ -637,8 +649,50 @@ footer div ul {
     border-radius: 50%;
 }
 
-.birch {
-    background-color: #c2b1a9;
+.Orange {
+    background-color:   orange;
+    border: solid 1px #4d4d4d;
+    box-shadow: inset 0px 0px 0px 3px #ffffff;
+    padding: 0.4vw;
+}
+
+.Green {
+    background-color: green;
+    border: solid 1px #4d4d4d;
+    box-shadow: inset 0px 0px 0px 3px #ffffff;
+    padding: 0.4vw;
+}
+
+.Black {
+    background-color: black;
+    border: solid 1px #4d4d4d;
+    box-shadow: inset 0px 0px 0px 3px #ffffff;
+    padding: 0.4vw;
+}
+
+.Blue {
+    background-color: blue;
+    border: solid 1px #4d4d4d;
+    box-shadow: inset 0px 0px 0px 3px #ffffff;
+    padding: 0.4vw;
+}
+
+.White {
+    background-color: white;
+    border: solid 1px #4d4d4d;
+    box-shadow: inset 0px 0px 0px 3px #ffffff;
+    padding: 0.4vw;
+}
+
+.Purple {
+    background-color: purple;
+    border: solid 1px #4d4d4d;
+    box-shadow: inset 0px 0px 0px 3px #ffffff;
+    padding: 0.4vw;
+}
+
+.Beige {
+    background-color: beige;
     border: solid 1px #4d4d4d;
     box-shadow: inset 0px 0px 0px 3px #ffffff;
     padding: 0.4vw;

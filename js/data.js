@@ -1,24 +1,52 @@
-export default [
-    {id: 1, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 2, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 3, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 4, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 5, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 6, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 7, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 8, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 9, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 10, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 11, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 12, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 13, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 14, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 15, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 16, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 17, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 18, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 19, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 20, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 21, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."},
-    {id: 22, name: "Emma Puffer Jacket", image: "../images/product-1.jpg", price: 49, material: "100% polyester", details: "Puffer jacket with polyester padding. Curabitur mauris augue, pulvinar tristique rutrum et, consectetur ac dui. Fusce molestie lobortis neque, eleifend ullamcorper sapien posuere nec. Fusce quis lacinia neque."}
-]
+import { createErrorMessage } from "./constructions.js";
+
+const apiUrl = "https://theflowerpower.shop/rainydays//wp-json/wc/v3/";
+const consumerKey = "ck_95a2d86e3033dfc27956284e25c875796c2f3868"
+const consumerSecret = "cs_a411db1e7d9ac000955bfe38aaaddf6a9ec3bc12"
+
+const appendConsumerSecretAndKey = function (url) {
+    return url += `?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`
+}
+
+const fetchProducts = async function() {
+    try {
+        var url = apiUrl + 'products'
+        const response = await fetch(`${appendConsumerSecretAndKey(url)}`);
+        const products = await response.json();
+        
+        return products
+    } catch (error) {
+        createErrorMessage(error);
+    }
+}
+
+const fetchProductById = async function (id) {
+    try {
+        var url = apiUrl + `products/${id}`
+        const response = await fetch(`${appendConsumerSecretAndKey(url)}`);
+        const product = await response.json();
+        
+        return product
+    } catch (error) {
+        createErrorMessage(error);
+    }
+}
+
+const fetchSimilarProducts = async function (id ) {
+    try {
+        var url = apiUrl + 'products'
+        const response = await fetch(`${appendConsumerSecretAndKey(url)}`);
+        const products = await response.json();
+        
+        const compareProduct = products.find(x => x.id === parseInt(id))
+        const categories = compareProduct.categories
+        
+        if(!compareProduct) {return products}
+
+        return products.filter(x =>x.categories.find(c => c.name === categories[0].name)).filter(x => x.id !== parseInt(id))
+    } catch (error) {
+        createErrorMessage(error);
+    }
+}
+
+export default {fetchProducts, fetchProductById, fetchSimilarProducts}

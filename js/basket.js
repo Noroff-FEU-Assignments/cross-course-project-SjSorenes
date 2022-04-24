@@ -1,4 +1,4 @@
-import products from './data.js'
+import products from './data_old.js'
 
 let countOfProductsInBasket = 0
 
